@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Favoritos.">
+  <meta name="description" content="Sobre Produto Favorito">
 
-  <title>Iraci Modas | Favoritos</title>
+  <title>Iraci Modas | Produto Favorito</title>
 
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <link rel="preload" href="../css/style.css" as="style">
@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body id="favoritos">
+<body id="mais">
   <header class="header-bg">
     <div class="header container">
       <a href="../">
@@ -28,9 +28,9 @@
       <nav aria-label="primary">
         <ul class="header-menu font-1-m cor-0">
           <li><a href="../">Home</a></li>
-          <li><a href="../galeria.html">Galeria</a></li>
+          <li><a href="../galeria.html?filtro=todos">Galeria</a></li>
           <li><a href="../contato.html">Contato</a></li>
-          <li><a href="./favoritos.html">Favoritos</a></li>
+          <li><a href="../usuario/favoritos.html">Favoritos</a></li>
         </ul>
       </nav>
       <nav aria-label="secondary">
@@ -41,69 +41,36 @@
     </div>
   </header>
 
-  <main>
-    <div class="titulo-bg">
-      <div class="titulo container">
-        <p class="font-2-l-b cor-11">Nome da pessoa logada</p>
-        <h1 class="font-1-xxl cor-10">
-          Favoritos</span>
-        </h1>
+  <main class="introducao-bg">
+    <div class="introducao container">
+      <div class="introducao-conteudo">
+        <h1 class="font-1-xl cor-i-3 fadeInDown" data-anime="200">Nome da imagem</h1>
+        <p class="font-2-l cor-9 fadeInDown" data-anime="400">
+          Feminino
+        </p>
+        <p class="font-2-l cor-9 fadeInDown" data-anime="400">
+          typesetting industry. Lorem Ipsum has been the
+        </p>
+        <p class="font-2-l cor-9 fadeInDown" data-anime="400">
+          tamanho:
+          <input type="radio" name="produto" value="p" id="p" />
+          <label for="p">P</label>
+          <input type="radio" name="produto" value="m" id="m" />
+          <label for="m">M</span></label>
+        </p>
+
+        <a class="botao fadeInDown" data-anime="600" href="../galeria.html">Remover</a>
       </div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./img/index/index5.png" />
+        <img src="../img/index/index5.png" width="827" height="659" alt="Teste 5." />
+      </picture>
     </div>
   </main>
 
-  <article class="galeria-lista">
-    <h2 class="container font-1-xxl">
-      Escolha a sua
-    </h2>
-
-    <ul>
-      <li>
-        <a href="./sobre_produto_favorito.html">
-          <img src="../img/index/index1.png" alt="Index1" width="400" height="1040" />
-          <h3 class="font-1-xl">Iraci Modas</h3>
-          <span class="font-2-m cor-8">Feminino</span>
-          <span class="font-2-m cor-8">R$ 59,99</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="../img/index/index1.png" alt="Index1" width="400" height="1040" />
-          <h3 class="font-1-xl">Iraci Modas</h3>
-          <span class="font-2-m cor-8">Feminino</span>
-          <span class="font-2-m cor-8">R$ 89,99</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="../img/index/index1.png" alt="Index1" width="400" height="1040" />
-          <h3 class="font-1-xl">Iraci Modas</h3>
-          <span class="font-2-m cor-8">Feminino</span>
-          <span class="font-2-m cor-8">R$ 109,99</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="../img/index/index1.png" alt="Index1" width="400" height="1040" />
-          <h3 class="font-1-xl">Iraci Modas</h3>
-          <span class="font-2-m cor-8">Feminino</span>
-          <span class="font-2-m cor-8">R$ 109,99</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="../img/index/index1.png" alt="Index1" width="400" height="1040" />
-          <h3 class="font-1-xl">Iraci Modas</h3>
-          <span class="font-2-m cor-8">Feminino</span>
-          <span class="font-2-m cor-8">R$ 109,99</span>
-        </a>
-      </li>
-    </ul>
-  </article>
-
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="../img/logo.png" width="136" height="32" alt="Logo: Iraci Modas" />
+      <img src="../img/logo.png" width="136" height="32" alt="Bikcraft" />
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
@@ -122,7 +89,7 @@
             <img src="../img/redes/facebook.svg" width="32" height="32" alt="Facebook" />
           </a>
           <!-- <a href="./">
-            <img src="../img/redes/youtube.svg" width="32" height="32" alt="Youtube" />
+            <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube" />
           </a> -->
         </div>
       </div>
@@ -130,10 +97,10 @@
         <h3 class="font-2-l-b cor-0">Informações</h3>
         <nav>
           <ul class="font-1-m cor-5">
-            <li><a href="./">Home</a></li>
-            <li><a href="../galeria">Galeria</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../galeria.html">Galeria</a></li>
             <li><a href="../contato.html">Contato</a></li>
-            <li><a href="../login">Login</a></li>
+            <li><a href="../usuario/login.html">Login</a></li>
           </ul>
         </nav>
       </div>
@@ -147,6 +114,7 @@
     </div>
   </footer>
   <script src="../js/plugins/simple-anime.js"></script>
+  <script src="../js/slide.js"></script>
   <script src="../js/script.js"></script>
 </body>
 
