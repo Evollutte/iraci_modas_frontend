@@ -19,14 +19,20 @@
   --cor-i-3: #76323f;
   --cor-i-4: #565656;
   --cor-i-5: #c09f80;
+
   --cor-background: rgba(236, 209, 209, 0.2);
+  --obrigatorio: #fd0000;
 }
 
 /* Novas Cores */
 /*  --cor-footer: #251d1d; */
 
 .fundo {
-  color: ecd1d1;
+  color: var(--cor-background);
+}
+
+.obrigatorio {
+  color: var(--obrigatorio);
 }
 
 .cor-i-0 {
