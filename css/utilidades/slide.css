@@ -17,8 +17,32 @@
   opacity: 1;
 }
 
+@media (max-width: 800px) {
+  #slider {
+    height: 50vw;
+  }
+}
+
 @media (max-width: 600px) {
   #slider {
-    height: 90vw;
+    height: 60vw;
+  }
+}
+
+@media (max-width: 510px) {
+  #slider {
+    height: 70vw;
+  }
+}
+
+@media (max-width: 410px) {
+  #slider {
+    height: 80vw;
+  }
+}
+
+@media (max-width: 310px) {
+  #slider {
+    height: 100vw;
   }
 }
