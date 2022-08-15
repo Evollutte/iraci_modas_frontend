@@ -10,7 +10,18 @@
   margin-bottom: 4px;
 }
 
-.form .col-2 {
+/*
+#div_id_first_name,
+#div_id_last_name,
+*/
+
+.form .col-2,
+#div_id_email,
+#div_id_genero,
+#div_id_password1,
+#div_id_password2,
+#div_id_login,
+#div_id_password {
   grid-column: span 2;
 }
 
@@ -75,7 +86,13 @@
   .form {
     grid-template-columns: 1fr;
   }
-  .form .col-2 {
+  .form .col-2,
+  #div_id_email,
+  #div_id_genero,
+  #div_id_password1,
+  #div_id_password2,
+  #div_id_login,
+  #div_id_password {
     grid-column: 1;
   }
 }
